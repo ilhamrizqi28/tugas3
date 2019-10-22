@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tambahkomentar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<input type="text" #nama placeholder="Nama Anda..." value="" (click)="getNama(nama.value)">
+<input type="text" #email placeholder="Email Anda..." value="" (click)="getEmail(email.value)">
+<input type="text" #komentar placeholder="Komentar Anda..." value="" (click)="getKomentar(komentar.value)">
+<input type="button" name="submitKomentar" id="submitKomentar" (click)="submitKomentar()" value="SUBMIT KOMENTAR">
+</ion-content>
